@@ -91,7 +91,7 @@ export const TwitterClone: React.FC = () => {
                 {language === 'en' ? 'Fetch Data' : 'Obtener datos'}
               </Button>
               <Link href="#" onClick={handleExampleClick} passHref>
-                <Button as="a">
+                <Button>
                   {language === 'en' ? 'Example' : 'Ejemplo'}
                 </Button>
               </Link>
