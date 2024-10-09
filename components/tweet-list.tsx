@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface TweetListProps {
   tweets: any[];
@@ -55,13 +56,14 @@ export const TweetList: React.FC<TweetListProps> = ({ tweets, language }) => {
                   <span className="ml-4">🔁 {tweet.retweetCount}</span>
                   <span className="ml-4">👁️ {tweet.viewCount}</span>
                 </div>
+                <Link href={`https://twitter.com/i/web/status/${tweet.id}`}>
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => window.open(`https://twitter.com/i/web/status/${tweet.id}`, '_blank')}
                 >
                   {language === 'en' ? 'View Tweet' : 'Ver Tweet'}
                 </Button>
+                </Link>
               </div>
             </div>
           ))}

@@ -20,7 +20,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ userData, language }) 
             <AvatarFallback>{userData.fullName.charAt(0)}</AvatarFallback>
           </Avatar>
           <div>
-            <h2 className="text-2xl font-bold">{userData.fullName}</h2>
+            <h2 className="text-2xl font-bold">{userData.fullName} {userData.isVerified ? "✔️" : ""}</h2>
             <p className="text-sm text-gray-500">@{userData.userName}</p>
           </div>
         </div>
