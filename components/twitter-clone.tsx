@@ -64,7 +64,7 @@ export const TwitterClone: React.FC = () => {
       <div className="flex-grow space-y-4 p-4">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">
-            {language === 'en' ? 'Twitter Clone' : 'Clon de Twitter'}
+            {language === 'en' ? 'Twitter Search Engine' : 'Motor de busqueda de Twitter'}
           </h1>
           <div className="space-x-2">
             <Button variant="outline" size="icon" onClick={toggleTheme}>
