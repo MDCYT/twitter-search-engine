@@ -8,8 +8,8 @@ import { Toaster } from "@/components/toaster"
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Twitter Clone',
-  description: 'A Twitter clone for learning API usage',
+  title: 'Twitter Search Engine',
+  description: 'A Twitter Search Engine for learning API usage',
 };
 
 export default function RootLayout({
